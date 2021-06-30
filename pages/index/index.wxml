@@ -1,0 +1,37 @@
+<!--pages/index.wxml-->
+<view class="container">
+  <!-- 计算器 -->
+  <view class="calculator">
+    <!-- 显示屏区域 -->
+    <view class="monitors">
+      <!-- <text>{{ userTouchAlgorithmPress }}</text> -->
+      <!-- <scroll-view scroll-x="true"><text>{{ userTouchValue }}</text></scroll-view> -->
+      <view class="calculation">{{ preValShow }} {{ whichAlgorithmPress }} {{ nextValShow }}</view>
+      <view class="result">{{ userTouchValue }}</view>
+      <!-- 显示屏遮罩 -->
+      <view class="mask"></view>
+    </view>
+    <!-- 按键区域 -->
+    <view class="keys">
+      <keyPress name="AC" data-id="AC" bindtap="AllClear"></keyPress>
+      <keyPress name="←" data-id="←" bindtap="BackOneNum"></keyPress>
+      <keyPress name="%" data-id="%" bindtap="getAlgorithmPressValue"></keyPress>
+      <keyPress name="÷" data-id="÷" bindtap="getAlgorithmPressValue"></keyPress>
+      <keyPress name="7" data-id="7" bindtap="getValue"></keyPress>
+      <keyPress name="8" data-id="8" bindtap="getValue"></keyPress>
+      <keyPress name="9" data-id="9" bindtap="getValue"></keyPress>
+      <keyPress name="x" data-id="x" bindtap="getAlgorithmPressValue"></keyPress>
+      <keyPress name="4" data-id="4" bindtap="getValue"></keyPress>
+      <keyPress name="5" data-id="5" bindtap="getValue"></keyPress>
+      <keyPress name="6" data-id="6" bindtap="getValue"></keyPress>
+      <keyPress name="-" data-id="-" bindtap="getAlgorithmPressValue"></keyPress>
+      <keyPress name="1" data-id="1" bindtap="getValue"></keyPress>
+      <keyPress name="2" data-id="2" bindtap="getValue"></keyPress>
+      <keyPress name="3" data-id="3" bindtap="getValue"></keyPress>
+      <keyPress name="+" data-id="+" bindtap="getAlgorithmPressValue" ></keyPress>
+      <view class="outsideBorder zero"><text class="keyPress" data-id="0" bindtap="getValue">0</text></view>
+      <keyPress name="." data-id="." bindtap="getValue"></keyPress>
+      <view class="outsideBorder exceptZero"><text class="keyPress equal" data-id="=" bindtap="result">=</text></view>
+    </view>
+  </view>
+</view>

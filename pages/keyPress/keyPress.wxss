@@ -1,0 +1,34 @@
+/* pages/keyPress/keyPress.wxss */
+
+.outsideBorder{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 134rpx;
+  height: 134rpx;
+  margin: 10rpx;
+  border-radius: 200rpx;
+  border: 4rpx solid rgb(161, 161, 161);
+  box-shadow: 0px 15px 15px -15px rgb(83, 82, 82); 
+}
+
+.keyPress{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 130rpx;
+  height: 130rpx;
+  line-height: 130rpx;
+  font-size: 60rpx;
+  /* margin: 15rpx; */
+  border: 4rpx solid rgb(216, 214, 214);
+  border-radius: 200rpx;
+  background: #CED7D8;
+  box-shadow: 0px 15px 15px -15px rgb(131, 130, 130) inset,
+              0px -15px 15px -15px rgb(255, 255, 255) inset; 
+}
+
+.keyPress:active{
+  box-shadow: 0px 15px 15px -15px rgb(39, 38, 38) inset,
+              0px -15px 15px -15px rgb(201, 201, 201) inset; 
+}

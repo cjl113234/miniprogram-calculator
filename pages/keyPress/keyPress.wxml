@@ -1,0 +1,4 @@
+<!--pages/keyPress/keyPress.wxml-->
+<view class="outsideBorder">
+  <text class="keyPress">{{ name }}</text>
+</view>

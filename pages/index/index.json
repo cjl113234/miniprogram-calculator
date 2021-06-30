@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "keyPress": "/pages/keyPress/keyPress"
+  },
+  "disableScroll": true
+}
